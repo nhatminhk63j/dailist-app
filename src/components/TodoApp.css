@@ -1,0 +1,125 @@
+.TodoApp {
+  background: rgb(92,131,201);
+  background: linear-gradient(176deg, rgba(92,131,201,1) 32%, rgba(140,150,215,1) 82%);
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.TodoApp h3 {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+.TodoApp .monster {
+  width: 100px;
+}
+
+.TodoApp .NoItem {
+  position: relative;
+}
+
+.TodoApp .notify {
+  position: absolute;
+  top: -50px;
+  width: 160px;
+  left: 50px;
+}
+
+
+.TodoApp .notify > p {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0 5px;
+  color: #13183a;
+}
+
+.TodoApp .notify p:nth-child(1) {
+  width: 80px;
+  border-bottom-right-radius: 0;
+}
+
+.TodoApp .notify p:nth-child(2){
+  margin-left: 30px;
+  border-top-left-radius: 0;
+}
+
+.TodoApp .ButtonAdd {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.ContainerItem {
+  flex-grow: 1;
+  text-align: left;
+  width: 80%;
+}
+
+.ContainerItem h4 {
+  color: #fff;
+  font-weight: 400;
+}
+
+
+.TodoItem {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #13183a;
+  box-shadow: 0 0 3px blue;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.ItemDone {
+  color: #fff;
+  background-color: #72b9ea;
+  box-shadow: 0 0 4px #15c0f1;
+  text-decoration: line-through;
+}
+
+.TodoItem div{
+  margin-left: 10px;
+}
+
+.ModalInput {
+  position: absolute;
+  padding: 15px 35px;
+  background: #fff;
+  top: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #5C83C9;
+}
+
+.ModalInput input {
+  padding: 10px;
+  border: none;
+}
+
+.ModalInput input:focus {
+  outline: none;
+}
+
+.ModalInput button {
+  background: #5C83C9;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
